@@ -1,0 +1,8 @@
+# venv
+ufc_api_env
+
+# caches
+**/__pycache__
+
+# secrets
+secrets/**
