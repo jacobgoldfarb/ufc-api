@@ -1,7 +1,10 @@
 from flask import Flask
 
-app = Flask(__name__)
+_app = None
 
-@app.route("/")
-def hello_world():
-    return "<h1>STHello, World!</h1>"
+def get_app():
+    global _app
+    if _app == None:
+        _app = Flask(__name__)
+        _app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    return _app
