@@ -7,4 +7,6 @@ Flask-SQLAlchemy==2.5.1
 psycopg2==2.9.3
 
 # serialization
-# flask-marshmallow==0.14.0
+
+# deployment
+waitress==2.1.2
